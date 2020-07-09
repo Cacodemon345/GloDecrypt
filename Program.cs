@@ -72,6 +72,7 @@ namespace GloDecrypt
                     fstrm2.Read(fileDataArray, 0, fileSize);
                     fstrm2.Seek(curFilePos, SeekOrigin.Begin);
                     Console.WriteLine("Extracting file: {0}", filenamestr);
+                    filenamestr.Replace('\\', '/');
                     var strmWR = new BinaryWriter(File.Create(filenamestr));
                     strmWR.Write(fileDataArray,0,fileSize);
                     strmWR.Dispose();
