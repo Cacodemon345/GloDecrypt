@@ -30,11 +30,11 @@ namespace GloDecrypt
                     extractData = true;
                     if (args.Length == 4)
                     {
-                        if (!System.IO.Directory.Exists(args[3]))
+                        if (!Directory.Exists(args[3]))
                         {
-                            System.IO.Directory.CreateDirectory(args[3]);
+                            Directory.CreateDirectory(args[3]);
                         }
-                        System.IO.Directory.SetCurrentDirectory(args[3]);
+                        Directory.SetCurrentDirectory(args[3]);
                     }
                 }
             }
@@ -73,6 +73,13 @@ namespace GloDecrypt
                     fstrm2.Seek(curFilePos, SeekOrigin.Begin);
                     Console.WriteLine("Extracting file: {0}", filenamestr);
                     filenamestr.Replace('\\', '/');
+                    if (filenamestr.Contains('/'))
+                    {
+                        if (!Directory.Exists(filenamestr))
+                        {
+                            Directory.CreateDirectory(filenamestr);
+                        }
+                    }
                     var strmWR = new BinaryWriter(File.Create(filenamestr));
                     strmWR.Write(fileDataArray,0,fileSize);
                     strmWR.Dispose();
