@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloDecrypt", "GloDecrypt.csproj", "{5B388FA5-CEAB-45A5-8FCB-43EE133C49BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B388FA5-CEAB-45A5-8FCB-43EE133C49BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B388FA5-CEAB-45A5-8FCB-43EE133C49BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B388FA5-CEAB-45A5-8FCB-43EE133C49BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B388FA5-CEAB-45A5-8FCB-43EE133C49BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3C8D788-3992-48B9-BD9B-E0C70AE18C74}
+	EndGlobalSection
+EndGlobal
