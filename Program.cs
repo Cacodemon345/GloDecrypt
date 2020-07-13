@@ -48,7 +48,7 @@ namespace GloDecrypt
                 fstrm.Read(array,0, (int)fstrm.Length);
                 for (int i = 0; i < fstrm.Length; i++)
                 {
-                    array2[i] = (byte)(array[i] ^ 0xFF);
+                    array2[i] = (byte)(~array[i]);
                 }
                 fstrm2.Write(array2, 0, (int)fstrm.Length);
             }
