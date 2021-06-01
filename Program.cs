@@ -36,6 +36,10 @@ namespace GloDecrypt
                         }
                         System.IO.Directory.SetCurrentDirectory(args[3]);
                     }
+                    if (!System.IO.Directory.Exists("../level/"))
+                    {
+                        System.IO.Directory.CreateDirectory("../level/");
+                    }
                 }
             }
             FileStream fstrm = new FileStream(args[0],FileMode.Open,FileAccess.Read);
